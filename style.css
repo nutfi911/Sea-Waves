@@ -1,0 +1,119 @@
+html, body, * {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 20vh 40vh 20vh;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#heading {
+    height: auto;
+    width: 5em;
+    font-family: 'Grechen Fuemen', cursive;
+    color: whitesmoke;
+    font-size: 4rem;
+    grid-column-start: 3;
+    grid-column-end: span col4-start;
+    grid-row-start: 3;
+    /* grid-row-end: initial; */
+}
+
+#description {
+    height: auto;
+    width: 10em;
+    color: rgb(185, 178, 178);
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 1.2em;
+    grid-column-start: 3;
+    grid-column-end: span col4-start;
+    grid-row-start: 4;
+}
+
+#read__more {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 6%;
+    padding: 0px;
+    margin: 0px;
+    height: 1.5em;
+    width: 5.7em;
+    padding: 2px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+#slogan {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 7em;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    text-shadow: inset 1px 2000px rgba(208, 208, 208, 0.54);
+    text-align: right;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-text-stroke: 0.5px rgba(204, 204, 204, 0.6);
+    mix-blend-mode: screen;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 7vh;
+    grid-column-start: 2;
+    overflow: hidden;
+}
+
+.navbar__item {
+    font-family: 'Grechen Fuemen', cursive;
+    color: whitesmoke;
+    font-size: 2rem;
+    width: auto;
+    margin-right: 1em;
+    margin-top: 0.2em;
+    text-decoration: none;
+}
+
+.navbar__item:hover {
+    background-color: rgba(125, 125, 125, 0.5);
+}
+
+.line {
+    color: white;
+    width: 11em;
+    grid-column-start: 6;
+    grid-row-start: 4;
+    letter-spacing: -1px;
+    padding: 0;
+    padding-left: 5vw;
+    margin: 0;
+    transform: rotate(90deg);
+}
+
+.social {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
